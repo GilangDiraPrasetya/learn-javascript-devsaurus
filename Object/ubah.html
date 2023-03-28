@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const blueDino = {
+        age: 150,
+        height: '1.5 m',
+        weight: '500 kg',
+      };
+
+      blueDino.age = 200;
+      blueDino['weight'] = '650 kg';
+
+      console.log(blueDino.age); // 200
+      console.log(blueDino['weight']); // 650 kg
+    </script>
+  </body>
+</html>

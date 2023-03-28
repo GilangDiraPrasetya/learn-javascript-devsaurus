@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Multiple Parameter
+      //   const sendMessage = (dinoName, message) => {
+      //     console.log(`Hi ${dinoName}, ${message}`);
+      //   };
+
+      //   const dinoName = 'Brachio';
+      //   const message = 'Where are you going?';
+
+      //   sendMessage(dinoName, message); // Hi Brachio, Where are you going?
+
+      const sendMessage = (dinoName, message = 'How are you?') => {
+        console.log(`Hi ${dinoName}, ${message}`);
+      };
+
+      const dinoName = 'Brachio';
+
+      sendMessage(dinoName); // Hi Brachio, How are you?
+    </script>
+  </body>
+</html>
